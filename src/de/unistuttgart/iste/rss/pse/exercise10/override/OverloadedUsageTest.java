@@ -3,17 +3,12 @@ package de.unistuttgart.iste.rss.pse.exercise10.override;
 public class OverloadedUsageTest {
 
     public static void main(final String[] args) {
-        final Hamster paule = new Hamster("Paule");
-        final Dog willi = new Dog("Willi");
+        // Create an entity paule and willi and reference a new hamster and dog respectively
         
-        printAnimalInfo(paule);
-        printAnimalInfo(willi);
+        // Call this class' static print animal info and pass paule and willi
         
-        Animal animal = paule;
-        printAnimalInfo(animal);
-        
-        animal = willi;
-        printAnimalInfo(animal);
+        // Create animal1 and animal2 and let it reference paule and willi
+        // Call this class' static print animal info and pass each animal
     }
     
     private static void printAnimalInfo(final Animal animal) {
