@@ -19,4 +19,6 @@ public class MyCheaterHamster extends Hamster
         super.move();
         super.move();
     }
+
 }
+
