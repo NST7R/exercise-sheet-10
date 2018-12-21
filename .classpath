@@ -3,6 +3,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry exported="true" kind="lib" path="libs/rss-hamstersimulator-1.0.3.jar"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry exported="true" kind="src" path="/de.unistuttgart.iste.rss.oo.hamstersimulator.main"/>
+	<classpathentry kind="src" path="/de.unistuttgart.iste.rss.oo.hamstersimulator.main"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
