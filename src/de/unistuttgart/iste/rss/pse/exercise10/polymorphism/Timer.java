@@ -1,5 +1,7 @@
 package de.unistuttgart.iste.rss.pse.exercise10.polymorphism;
 
+import static java.lang.Math.pow;
+
 enum State {
     READY,
     RUNNING,
@@ -63,9 +65,9 @@ public class Timer {
     }
 
     /**
-     * Print the measured time to the console in Milliseconds 
+     * Print the measured time to the console in Microseconds 
      */
     public void printResult() {
-        System.out.format("The timer recorded %dms\n", getResultInNanoseconds() / 1000);
+        System.out.format("The timer recorded %dµs (%10.4fms)\n", Math.round(getResultInNanoseconds() / pow(10, 3)), getResultInNanoseconds() / pow(10, 6));
     }
 }
