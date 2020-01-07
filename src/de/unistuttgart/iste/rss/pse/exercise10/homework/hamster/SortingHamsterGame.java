@@ -18,8 +18,8 @@ import java.io.InputStream;
  */
 public class SortingHamsterGame extends SimpleHamsterGame {
 
-    public SortingHamsterGame() {
-    	File terFile = new File("territories/sorting.ter");
+	public SortingHamsterGame() {
+		File terFile = new File("territories/sorting.ter");
 		try {
 			InputStream targetStream = new FileInputStream(terFile);
 			game.initialize(targetStream);
@@ -27,16 +27,17 @@ public class SortingHamsterGame extends SimpleHamsterGame {
 			throw new RuntimeException(ex);
 		}
 		game.displayInNewGameWindow();
-    }
+	}
 
-    @Override
-    protected void run(){
-        // call your sorting method here
-    }
+	@Override
+	protected void run() {
+		// call your sorting method here
+	}
 
-    public void main(){
-        game.startGame(false);
-        doRun();
-        game.stopGame();
-    }
+	public static void main(String[] args) {
+		SortingHamsterGame sortingHamsterGame = new SortingHamsterGame();
+		sortingHamsterGame.game.startGame(false);
+		sortingHamsterGame.doRun();
+		sortingHamsterGame.game.stopGame();
+	}
 }

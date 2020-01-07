@@ -1,6 +1,5 @@
 package de.unistuttgart.iste.rss.pse.exercise10.homework.hamster;
 
-
 import de.unistuttgart.iste.rss.oo.hamstersimulator.external.model.Hamster;
 import de.unistuttgart.iste.rss.oo.hamstersimulator.datatypes.Location;
 import de.unistuttgart.iste.rss.oo.hamstersimulator.external.model.Territory;
@@ -21,8 +20,8 @@ import java.util.*;
 
 public class ReplacementHamsterGame extends SimpleHamsterGame {
 
-    public ReplacementHamsterGame() {
-    	File terFile = new File("territories/rotate.ter");
+	public ReplacementHamsterGame() {
+		File terFile = new File("territories/rotate.ter");
 		try {
 			InputStream targetStream = new FileInputStream(terFile);
 			game.initialize(targetStream);
@@ -31,22 +30,23 @@ public class ReplacementHamsterGame extends SimpleHamsterGame {
 		}
 		game.displayInNewGameWindow();
 
-    }
+	}
 
-    @Override
-    protected void run(){
-        // call your rotatin method here
-    }
+	@Override
+	protected void run() {
+		// call your rotatin method here
+	}
 
-    public void main(){
-        game.startGame(false);
-        doRun();
-        game.stopGame();
-    }
+	public static void main(String[] args) {
+		ReplacementHamsterGame replacementHamsterGame = new ReplacementHamsterGame();
+		replacementHamsterGame.game.startGame(false);
+		replacementHamsterGame.doRun();
+		replacementHamsterGame.game.stopGame();
+	}
 
-    public void rotate180() {
-    }
+	public void rotate180() {
+	}
 
-    public void rotate90() {
-    }
+	public void rotate90() {
+	}
 }
