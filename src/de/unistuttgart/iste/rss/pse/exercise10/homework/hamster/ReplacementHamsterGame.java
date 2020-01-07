@@ -12,7 +12,7 @@ import java.io.InputStream;
 import java.util.*;
 
 /**
- * Write a description of class SortingHamsterGame here.
+ * Write a description of class ReplacementHamsterGame here.
  *
  * @author (your name)
  * @version (a version number or a date)
